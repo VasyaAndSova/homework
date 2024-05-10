@@ -10,3 +10,11 @@ def get_mask_card_or_account(numbers: str) -> str:
         result = f'{numbers[:-16]}{mask_card}'
         return result
 
+
+def get_date_string(date: str) -> str:
+    """Функция принимает строку и возвращает строку с датой"""
+    date_string = date[:10].split('-')[::-1]
+    return '.'.join(date_string)
+
+
+
