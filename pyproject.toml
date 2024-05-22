@@ -18,6 +18,7 @@ isort = "^5.13.2"
 
 [tool.poetry.group.dev.dependencies]
 pytest-cov = "^5.0.0"
+pytest = "^8.2.1"
 
 [build-system]
 requires = ["poetry-core"]
