@@ -1,4 +1,4 @@
-from src.processing import get_new_list_dict, get_dict_date_dicrease
+from src.processing import get_dict_date_dicrease, get_new_list_dict
 
 
 def test_get_new_list_dict_executed(list_dict_executed):
