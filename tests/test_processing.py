@@ -30,7 +30,7 @@ def test_get_new_list_dict_canceled(list_dict_canceled):
     )
 
 
-def test_get_dict_date_dicrease(list_dict):
+def test_get_dict_date_dicrease(operations):
     assert (
         get_dict_date_dicrease(
             [
@@ -40,11 +40,11 @@ def test_get_dict_date_dicrease(list_dict):
                 {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
             ]
         )
-        == list_dict
+        == operations
     )
 
 
-def test_get_dict_date_dicrease_reverse(list_dict_reverse):
+def test_get_dict_date_dicrease_reverse(operations_reverse):
     assert (
         get_dict_date_dicrease(
             [
@@ -55,5 +55,5 @@ def test_get_dict_date_dicrease_reverse(list_dict_reverse):
             ],
             False,
         )
-        == list_dict_reverse
+        == operations_reverse
     )
