@@ -1,7 +1,7 @@
 from typing import Any
 
 
-def get_new_list_dict(list_dict: list[dict[str, object]], key_state: str = "EXECUTED") -> list[dict[str, object]]:
+def get_dict_by_key_state(list_dict: list[dict[str, object]], key_state: str = "EXECUTED") -> list[dict[str, object]]:
     """Функция возвращает список тех словарей, у которых ключ state содержит переданное в функцию значение"""
     new_list_dict = []
     for dicts in list_dict:

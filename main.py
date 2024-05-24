@@ -1,4 +1,4 @@
-from src.processing import get_dict_date_dicrease, get_new_list_dict
+from src.processing import get_dict_by_key_state, get_dict_date_dicrease
 from src.widget import get_date_string, get_mask_card_or_account
 
 print(get_mask_card_or_account("Maestro 1596837868705199"))
@@ -6,7 +6,7 @@ print(get_mask_card_or_account("Счет 64686473678894779589"))
 print(get_date_string("2018-07-11T02:26:18.671407"))
 
 print(
-    get_new_list_dict(
+    get_dict_by_key_state(
         [
             {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
             {"id": 939719570, "state": "EXECUTED", "date": "2018-06-30T02:08:58.425572"},
@@ -16,7 +16,7 @@ print(
     )
 )
 print(
-    get_new_list_dict(
+    get_dict_by_key_state(
         [
             {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
             {"id": 939719570, "state": "EXECUTED", "date": "2018-06-30T02:08:58.425572"},
