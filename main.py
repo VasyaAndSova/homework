@@ -101,13 +101,13 @@ transactions = [
 
 usd_transactions = filter_by_currency(transactions, "USD")
 
-for i in range(2):
+for _ in range(2):
     print(next(usd_transactions)["id"])
 
 
 descriptions = transaction_descriptions(transactions)
 
-for i in range(5):
+for _ in range(5):
     print(next(descriptions))
 
 
