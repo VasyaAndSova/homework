@@ -1,7 +1,10 @@
+import os.path
+
 from src.decorators import log
 from src.generators import card_number_generator, filter_by_currency, transaction_descriptions
 from src.processing import get_dict_by_key_state, get_dict_date_dicrease
 from src.widget import get_date_string, get_mask_card_or_account
+
 
 print(get_mask_card_or_account("Maestro 1596837868705199"))
 print(get_mask_card_or_account("Счет 64686473678894779589"))
@@ -122,3 +125,5 @@ def my_function(x: int, y: int) -> int:
 
 
 my_function(1, 2)
+
+
