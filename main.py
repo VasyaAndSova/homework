@@ -1,6 +1,10 @@
+import os.path
+
+from src.decorators import log
 from src.generators import card_number_generator, filter_by_currency, transaction_descriptions
 from src.processing import get_dict_by_key_state, get_dict_date_dicrease
 from src.widget import get_date_string, get_mask_card_or_account
+
 
 print(get_mask_card_or_account("Maestro 1596837868705199"))
 print(get_mask_card_or_account("Счет 64686473678894779589"))
@@ -113,3 +117,13 @@ for _ in range(5):
 
 for card_number in card_number_generator(1, 5):
     print(card_number)
+
+
+@log(filename="mylog.txt")
+def my_function(x: int, y: int) -> int:
+    return x + y
+
+
+my_function(1, 2)
+
+
