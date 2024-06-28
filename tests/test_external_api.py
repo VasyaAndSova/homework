@@ -60,3 +60,4 @@ class TestConvertToRub(unittest.TestCase):
         result = get_transaction_amount(transaction)
         self.assertEqual(result, 0.0)
 
+
