@@ -1,0 +1,17 @@
+my_function ok. Result: 3
+my_function ok. Result: 9
+my_function ok. Result: 9
+my_function TypeError: can only concatenate str (not "int") to str. Inputs: ('f', 8), {}
+example_function ok. Result: 500
+example_function TypeError: Что-то пошло не так. Inputs: (5, 100), {}
+example_function ok. Result: 500
+example_function ok. Result: 3
+example_function ok. Result: 18
+example_function ok. Result: 18
+example_function TypeError: Что-то пошло не так. Inputs: ('a', 6), {}
+my_function ok. Result: 3
+my_function ok. Result: 3
+my_function ok. Result: 3
+my_function ok. Result: 3
+example_function ok. Result: 18
+example_function TypeError: Что-то пошло не так. Inputs: ('a', 6), {}
